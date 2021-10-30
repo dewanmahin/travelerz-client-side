@@ -1,7 +1,5 @@
 .banner {
-    padding: 120px 0;
-    background: url(../../../images/banner-bg.svg);
-    background-repeat: no-repeat;
+    padding: 90px 0;
 }
 .banner-text h1{
     font-size: 60px;

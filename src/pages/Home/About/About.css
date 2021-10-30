@@ -1,0 +1,34 @@
+.about{
+    padding: 90px 0;
+}
+.about-img img{
+    width: 100%;
+}
+.about-txt{
+    text-align: left;
+}
+.about-txt h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #DD4F3B;
+}
+.about-txt h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+}
+.about-txt p{
+    font-size: 20px;
+    line-height: 32px;
+    padding-right: 100px;
+}
+.common-btn{
+    background: #DD4F3B !important;
+    color: white !important;
+    transition: 0.3s !important;
+}
+.common-btn:hover{
+    color: #DD4F3B !important;
+    background: transparent !important;
+    border: 1px solid #DD4F3B !important;
+}
