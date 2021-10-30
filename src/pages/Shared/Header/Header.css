@@ -1,0 +1,27 @@
+.header img{
+    width: 180px;
+}
+.header .sub-nav{
+    background-color: #232323f2;
+    color: white;
+    padding: 8px 0;
+}
+.main-nav .nav-item .nav-link{
+    color: #000000d9;
+    font-size: 18px;
+    font-weight: 600;
+}
+.login-btn{
+    width: 180px;
+}
+.login-btn .nav-item .nav-link{
+    border: 1px solid #DD4E3A;
+    border-radius: 5px;
+    color: black;
+    background: #dd4e3a2e;
+    transition: 0.3s;
+}
+.login-btn .nav-item .nav-link:hover{
+    color: #ffffff;
+    background: #dd4d3ae5;
+}
