@@ -1,0 +1,31 @@
+.categories{
+    padding: 90px 0;
+}
+.ctrg-title h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    position: relative;
+}
+.ctrg-title p{
+    font-size: 20px;
+    line-height: 32px;
+}
+.categories img{
+    width: 80%;
+    height: 250px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.categories .row h3{
+    background: #ffbebe2e;
+    color: black;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px dashed #dd4f3b47;
+    padding: 10px;
+    margin-top: 6px;
+}
