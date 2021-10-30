@@ -1,0 +1,37 @@
+.footer{
+    padding: 90px 0 60px;
+    background: #ff9a8c17;
+}
+.footer-card{
+    border-right: 3px solid #DD4E3A;
+    border-radius: 8px;
+    padding: 15px 0;
+}
+.footer h4{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.footer p{
+    color: #333;
+    font-size: 19px;
+    line-height: 30px;
+}
+.footer ul{
+    padding: 0px
+}
+.footer ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+.footer ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.sub-footer{
+    padding: 8px 0;
+    background: #dd4e3a2e;
+    font-weight: 700;
+    color: black;
+    letter-spacing: .5px;
+}

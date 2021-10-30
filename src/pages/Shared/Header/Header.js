@@ -23,7 +23,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <nav className="main-nav navbar navbar-expand-lg bg-light py-3">
+            <nav className="main-nav navbar navbar-expand-lg py-3">
                 <div className="container">
                     {/* Logo */}
                     <Link className="navbar-brand" to="/home"><img src={logo} alt="" /></Link>
