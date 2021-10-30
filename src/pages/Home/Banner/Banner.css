@@ -1,0 +1,21 @@
+.banner {
+    padding: 120px 0;
+    background: url(../../../images/banner-bg.svg);
+    background-repeat: no-repeat;
+}
+.banner-text h1{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: black;
+}
+.banner-text p{
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #474747;
+}
+.banner-img img{
+    width: 100%;
+}
