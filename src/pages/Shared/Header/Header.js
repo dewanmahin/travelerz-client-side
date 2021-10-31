@@ -1,11 +1,14 @@
-import { faEnvelope, faPhone, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faSignInAlt, faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo.png'
 import './Header.css'
 
 const Header = () => {
+    const {user, logOut} = useAuth();
+
     return (
         <div className="header">
             <div className="sub-nav">
@@ -15,11 +18,10 @@ const Header = () => {
                         <div><FontAwesomeIcon icon={faPhone}/> <span className='ms-1'>+8 12 3456897</span></div>
                     </div>
                     <div className="d-flex align-items-center">
-                        {/* {user && <span className="userName"><FontAwesomeIcon style={{color: 'white'}} className='' icon={faUser}/> {user.displayName}</span>}
+                        <FontAwesomeIcon style={{color: 'white'}} className='me-2' icon={faUser}/>
                         {!user.displayName ? 
-                        <span>As a guest</span> :
-                        <span>{user.displayName}</span>} */}
-                        <span>Unknown</span>
+                        <span>Account</span> :
+                        <span>{user.displayName}</span>}
                     </div>
                 </div>
             </div>
@@ -37,16 +39,21 @@ const Header = () => {
                             <li className="nav-item">
                                 <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" aria-current="page" to="/home">Home</NavLink>
                             </li>
-                            {/* <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">My Bookings</NavLink>
-                            </li> */}
+                            {!user.displayName ? <span style={{display: "none"}}></span> : 
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/myBookings">My Bookings</NavLink>
+                                </li>
+                            }
                             <li className="nav-item">
                                 <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" to="/contact">Contact Us</NavLink>
                             </li>
                         </ul>
                         <ul className="login-btn navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item ms-auto">
-                                <NavLink className="nav-link" to="/login">Login <FontAwesomeIcon icon={faSignInAlt}/></NavLink>
+                                {!user.displayName ? 
+                                <NavLink className="nav-link" to="/login">Login<FontAwesomeIcon className="ms-2" icon={faSignInAlt}/></NavLink> :
+                                <button onClick={logOut} className="nav-link">Log Out<FontAwesomeIcon className="ms-2" icon={faSignOutAlt}/></button>
+                                }
                             </li>
                         </ul>
                     </div>
