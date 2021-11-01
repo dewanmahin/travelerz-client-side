@@ -1,5 +1,4 @@
 import React from 'react';
-import './MyBooking.css'
 
 const MyBooking = (props) => {
     const {_id, singleItem} = props.myBooking;
