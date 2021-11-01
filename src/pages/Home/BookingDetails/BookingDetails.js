@@ -16,7 +16,7 @@ const BookingDetails = () => {
     const onSubmit = data => {
         data.singleItem = singleDtl;
         // console.log(data);
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://enigmatic-basin-22776.herokuapp.com/bookings', {
             method: 'POST',
             headers: {'content-Type': 'application/json'},
             body: JSON.stringify(data),
@@ -30,7 +30,7 @@ const BookingDetails = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://enigmatic-basin-22776.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => SetBookingDetails(data))
     }, [])

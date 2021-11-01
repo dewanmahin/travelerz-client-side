@@ -6,7 +6,7 @@ const AllBookings = () => {
     const [allBookings, setAllBookings] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allBookings')
+        fetch('https://enigmatic-basin-22776.herokuapp.com/allBookings')
             .then(res => res.json())
             .then(data => setAllBookings(data))
     }, [])
@@ -15,7 +15,7 @@ const AllBookings = () => {
     const handleDeleteBooking = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if(proceed){
-            const url = `http://localhost:5000/allBookings/${id}`;
+            const url = `https://enigmatic-basin-22776.herokuapp.com/allBookings/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

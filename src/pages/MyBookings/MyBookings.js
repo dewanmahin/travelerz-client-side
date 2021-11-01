@@ -10,7 +10,7 @@ const MyBookings = () => {
     const userEmail = user?.user?.email;
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/allBookings/${userEmail}`)
+        fetch(`https://enigmatic-basin-22776.herokuapp.com/allBookings/${userEmail}`)
             .then(res => res.json())
             .then(data => setMyBookings(data))
     }, [userEmail]) 
@@ -19,7 +19,7 @@ const MyBookings = () => {
     const handleDeleteBooking = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if(proceed){
-            const url = `http://localhost:5000/allBookings/${id}`;
+            const url = `https://enigmatic-basin-22776.herokuapp.com/allBookings/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
