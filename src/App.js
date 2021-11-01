@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Contexts/AuthProvider';
+import AllBookings from './pages/AllBookings/AllBookings';
 import Contact from './pages/Contact/Contact';
 import BookingDetails from './pages/Home/BookingDetails/BookingDetails';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import MyBookings from './pages/MyBookings/MyBookings';
 import NotFound from './pages/NotFound/NotFound';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 
@@ -31,6 +33,11 @@ function App() {
                 <MyBookings></MyBookings>
               <Footer></Footer>
             </Route>
+            <Route path='/allBookings'>
+              <Header></Header>
+                <AllBookings></AllBookings>
+              <Footer></Footer>
+            </Route>
             <Route path='/contact'>
               <Header></Header>
                 <Contact></Contact>
@@ -41,11 +48,11 @@ function App() {
                 <Login></Login>
               <Footer></Footer>
             </Route>
-            <Route path='/bookingdtl/:_id'>
+            <PrivateRoute path='/bookingdtl/:_id'>
               <Header></Header>
                 <BookingDetails></BookingDetails>
               <Footer></Footer>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

@@ -1,0 +1,20 @@
+/* .allBooking{
+    
+} */
+.ab-card{
+    box-shadow: 0px 5px 15px 1px #0000000d;
+    padding: 25px;
+    border-radius: 10px;
+}
+.ab-card img{
+    width: 200px;
+    border-radius: 8px;
+}
+.ab-card h1{
+}
+.ab-card h4{
+}
+.ab-card .address{
+}
+.ab-card .number{
+}

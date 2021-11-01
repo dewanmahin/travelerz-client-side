@@ -44,6 +44,11 @@ const Header = () => {
                                     <NavLink className="nav-link" to="/myBookings">My Bookings</NavLink>
                                 </li>
                             }
+                            {!user.displayName ? <span style={{display: "none"}}></span> : 
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/allBookings">All Bookings</NavLink>
+                                </li>
+                            }
                             <li className="nav-item">
                                 <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" to="/contact">Contact Us</NavLink>
                             </li>
