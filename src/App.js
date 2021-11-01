@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Contexts/AuthProvider';
 import Contact from './pages/Contact/Contact';
+import BookingDetails from './pages/Home/BookingDetails/BookingDetails';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import MyBookings from './pages/MyBookings/MyBookings';
@@ -38,6 +39,11 @@ function App() {
             <Route path='/login'>
               <Header></Header>
                 <Login></Login>
+              <Footer></Footer>
+            </Route>
+            <Route path='/bookingdtl/:_id'>
+              <Header></Header>
+                <BookingDetails></BookingDetails>
               <Footer></Footer>
             </Route>
             <Route path="*">
