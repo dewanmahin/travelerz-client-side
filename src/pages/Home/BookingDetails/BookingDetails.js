@@ -15,7 +15,7 @@ const BookingDetails = () => {
 
     const onSubmit = data => {
         data.singleItem = singleDtl;
-        console.log(data);
+        // console.log(data);
         fetch('http://localhost:5000/bookings', {
             method: 'POST',
             headers: {'content-Type': 'application/json'},
@@ -23,7 +23,7 @@ const BookingDetails = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 reset();
                 alert("Your booking is confirmed.")
             })

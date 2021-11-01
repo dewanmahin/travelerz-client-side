@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Contexts/AuthProvider';
+import AddPackage from './pages/AddPackage/AddPackage';
 import AllBookings from './pages/AllBookings/AllBookings';
 import Contact from './pages/Contact/Contact';
 import BookingDetails from './pages/Home/BookingDetails/BookingDetails';
@@ -36,6 +37,11 @@ function App() {
             <Route path='/allBookings'>
               <Header></Header>
                 <AllBookings></AllBookings>
+              <Footer></Footer>
+            </Route>
+            <Route path='/addPackage'>
+              <Header></Header>
+                <AddPackage></AddPackage>
               <Footer></Footer>
             </Route>
             <Route path='/contact'>

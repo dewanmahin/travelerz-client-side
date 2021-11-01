@@ -1,0 +1,24 @@
+.notFound{
+    position: relative;
+}
+.notFound img{
+    width: 100vw;
+    height: 100vh;
+}
+.notFound a{
+    position: absolute;
+    top: 70%;
+    left: 56%;
+}
+.notFound .common-btn{
+    background: white !important;
+    color: black !important;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid white !important;
+}
+.notFound .common-btn:hover {
+    background: #ffffff00 !important;
+    color: #ffffff !important;
+    border: 2px solid white !important;
+}

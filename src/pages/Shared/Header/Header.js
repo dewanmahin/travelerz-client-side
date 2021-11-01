@@ -41,17 +41,22 @@ const Header = () => {
                             </li>
                             {!user.displayName ? <span style={{display: "none"}}></span> : 
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/myBookings">My Bookings</NavLink>
+                                    <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" to="/myBookings">My Bookings</NavLink>
                                 </li>
                             }
                             {!user.displayName ? <span style={{display: "none"}}></span> : 
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/allBookings">All Bookings</NavLink>
+                                    <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" to="/allBookings">All Bookings</NavLink>
                                 </li>
                             }
                             <li className="nav-item">
                                 <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" to="/contact">Contact Us</NavLink>
                             </li>
+                            {!user.displayName ? <span style={{display: "none"}}></span> : 
+                                <li className="nav-item">
+                                    <NavLink activeStyle={{color: "#DD4E3A"}} className="nav-link" to="/addPackage">Add Package</NavLink>
+                                </li>
+                            }
                         </ul>
                         <ul className="login-btn navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item ms-auto">
